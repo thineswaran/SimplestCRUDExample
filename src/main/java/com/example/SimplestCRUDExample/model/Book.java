@@ -5,7 +5,10 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Books")
+@Table(name="BOOKS") //oracle
+
+//@Table(name="books") //mysql
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
@@ -15,12 +18,13 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @Column(name = "ID")
+    private Long ID;
 
-    @Column
+    @Column(name="TITLE")
     private String title;
 
-    @Column
+    @Column(name="AUTHOR")
     private String author;
 
 }

@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/")
 public class BookController {
 
     @Autowired
     BookRepository bookRepository;
 
-    @GetMapping("/getAllBooks")
+    @GetMapping("/books")
     public ResponseEntity<List<Book>> getAllBooks() {
         try {
             List<Book> bookList = new ArrayList<>();
@@ -34,7 +34,7 @@ public class BookController {
         }
     }
 
-    @GetMapping("/getBookById/{id}")
+    @GetMapping("/books/{id}")
     public ResponseEntity<Book> getBookById(@PathVariable Long id) {
         Optional<Book> bookObj = bookRepository.findById(id);
         if (bookObj.isPresent()) {
