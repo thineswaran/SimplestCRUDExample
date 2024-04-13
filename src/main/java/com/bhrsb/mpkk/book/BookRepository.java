@@ -1,6 +1,5 @@
-package com.example.SimplestCRUDExample.repo;
+package com.bhrsb.mpkk.book;
 
-import com.example.SimplestCRUDExample.model.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

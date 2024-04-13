@@ -1,4 +1,4 @@
-package com.example.SimplestCRUDExample;
+package com.bhrsb.mpkk;
 
 import java.util.List;
 
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SimplestCrudExampleApplication {
+public class MPKK {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SimplestCrudExampleApplication.class, args);
+		SpringApplication.run(MPKK.class, args);
 	}
 
 	@GetMapping
@@ -20,10 +20,6 @@ public class SimplestCrudExampleApplication {
 	public List<String> hello(){
 		return List.of("Hello","World");
 	}
-
-	/*public String hello(){
-		return "Hello World";
-	}*/
 
 
 }
