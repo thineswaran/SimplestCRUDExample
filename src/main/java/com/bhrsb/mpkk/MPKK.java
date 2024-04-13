@@ -1,7 +1,5 @@
 package com.bhrsb.mpkk;
 
-import java.util.List;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,9 +14,8 @@ public class MPKK {
 	}
 
 	@GetMapping
-
-	public List<String> hello(){
-		return List.of("Hello","World");
+	public String hello(){
+		return "Hello World from BHR \n This Java Spring Boot Wildfly thingy took so long to be up and running";
 	}
 
 
